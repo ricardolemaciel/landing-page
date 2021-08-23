@@ -2,19 +2,38 @@
 <html>
     <head>
         <title>Landing Page</title>
-        <link rel="stylesheet" href="estilo/style.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>
         <div class="header">
-            <h2>O QUE É UMA LANDING PAGE?</h2>
-            <a href="" class="btn_descobrir">Descobrir <i class="material-icons" style="font-size: 32;">expand_more</i></a>
+            <div class="video-overlay"></div>
+            <video autoplay muted loop id="myVideo">
+                <source src="assets/video/pexels-rodnae-productions-7308103.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <h2>O<br>QUE<br>É<br>UMA<br>LANDING PAGE?</h2>
+            <a href="#" class="btn_descobrir">DESCOBRIR 
+                <i class="material-icons" style="font-size: 32;">expand_more</i></a>     
           </div>
           
+          <div class="row">
+            <div class="column" style="background-color:blue;">
+                <span class="title">Lorem Ipsum</span>
+                <span class="text">Lorem ipsum dapibus fames velit proin risus eget curae semper ante vitae odio est enim, quisque tempus amet sem proin rhoncus sollicitudin congue feugiat bibendum fames sollicitudin. 
+                    interdum posuere arcu pellentesque non dapibus elementum per convallis arcu, blandit auctor tellus fames consectetur aliquam turpis pellentesque posuere, mollis duis sodales eros aliquet ad molestie euismod. 
+                    tempor eget inceptos porttitor viverra lacinia turpis libero fermentum faucibus, scelerisque donec felis venenatis fermentum rhoncus netus congue, lacinia morbi pellentesque vestibulum urna aliquam lacus sodales. 
+                    habitasse per varius mollis vestibulum, dapibus dictum quam maecenas, habitant maecenas lectus.</span>
+            </div>
+          </div>
           <div class="row">
             <div class="column" style="background-color:#aaa;">Column</div>
             <div class="column" style="background-color:#bbb;">Column</div>
             <div class="column" style="background-color:#ccc;">Column</div>
+          </div>
+          <div class="row">
+            <div class="column" style="background-color:yellow;">Column</div>
+            <div class="column" style="background-color:red;">Column</div>
           </div>
           
           <div class="footer">
