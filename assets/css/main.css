@@ -3,12 +3,14 @@
 
 * { box-sizing: border-box; }
 
+html{ scroll-behavior: smooth; }
+
 body { margin: 0; }
 
 /* header */
     .header {
         padding: 30px;
-        text-align: right;
+        text-align: center;
         font-size: 35px;
         height: 100vh;
         width: 100%;
@@ -43,14 +45,15 @@ body { margin: 0; }
 
 /* btn */
     .btn_descobrir {
-        background-color: #F6D167;
+        background-color: #3DB2FF;
         color: #000;
         border-radius: 20px;
         text-decoration: none;
+        text-align: center;
         display: inline-block;
         width: 160px;
-        /* margin: 25% 0 0 0; */
-        border:1px solid #F6D167;
+        margin: 15% 0 0 0;
+        border:1px solid #3DB2FF;
 
         position: relative;
         z-index: 2;
@@ -61,35 +64,182 @@ body { margin: 0; }
     }
 
     .btn_descobrir:hover {
-        background-color:#FFF7AE;
+        background-color:#FF2442;
+        border:1px solid #FF2442;
     }
 
+    .btn_secao01 {
+        background-color: #3DB2FF;
+        color: #000;
+        border-radius: 20px;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        width: 160px;
+        /* margin: 0 0 5% 0; */
+        margin-left: 5%;
+        border:1px solid #3DB2FF;
+
+        position: relative;
+        z-index: 2;
+
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 300;
+        font-size: 22px;
+    }
+
+    .btn_secao01:hover {
+        background-color:#FF2442;
+        border:1px solid #FF2442;
+    }
+
+    .btn_form {
+        background-color: #3DB2FF;
+        color: #000;
+        border-radius: 20px;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        width: 160px;
+        margin: 5% 0 0 35%;
+        border:1px solid #3DB2FF;
+
+        position: relative;
+        z-index: 2;
+
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 300;
+        font-size: 22px;
+    }
+
+    .btn_form:hover {
+        background-color:#FF2442;
+        border:1px solid #FF2442;
+    }
 
 /* Titles and texts */
     .title {
         font-family: 'Urbanist', sans-serif;
         font-weight: 600;
-        font-size: 22px;
+        font-size: 36px;
+        text-decoration: underline;
+        margin: 3% 0 0 0;
     }
 
-/* Container for flexboxes */
+    .text {
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        text-align: justify;
+
+        width: 50%;
+        margin: 0 0 0 5%;
+    }
+
+    .name {
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 600;
+        font-size: 26px;
+    }
+
+    .discricao {
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        text-align: left;
+
+        width: 90%;
+        margin: 0 0 0 5%;   
+    }
+
+    .developer {
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .newsletter {
+        text-decoration: none;
+        text-align: center;
+    }
+/* Container */
     .row {
         display: -webkit-flex;
         display: flex;
     }
 
-/* Create three equal columns that sits next to each other */
+/* Column */
     .column {
         -webkit-flex: 1;
         -ms-flex: 1;
         flex: 1;
         padding: 10px;
-        height: 300px; /* Should be removed. Only for demonstration */
+        height: 100vh;
+        
+        text-align: left;
     }
 
+    #item-01 {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        padding: 10px;
+        height: 100vh;
+        
+        background-color: #F1DEDE;
+        text-align: left;
+    }
+
+    .item-02 {
+        background-color: #FFB830;
+    }
+
+    .item-03 {
+        background-color: #F1DEDE;
+        text-align: center;
+        width: 90%;
+        text-decoration: none;
+
+    }
+
+    .item-04 {
+        background-color: #F1DEDE;
+        text-decoration: none;
+        text-align: center;
+    }
+
+/* Form  */
+    form input {
+        width: 80%;
+        font-size: 24px;
+        /* border: 2px solid #FF2442 ; */
+        border: none;
+        margin: 5% 0 0 10%;
+        background-color: #F1DEDE;
+    }
+
+
+/* img */
+    .img-01 {
+        width: 250px;
+        margin: -15% 0 0 70%;
+        /* margin-left: 70%;
+        margin-top: -10%; */
+
+    }
+
+    .gifs {
+        width: 250px;
+        margin: 15% 0 0 20%;
+    }
+    .prints {
+        width: 250px;
+        margin: 30% 0 0 20%;
+    }
 /* footer */
     .footer {
-        background-color: #f1f1f1;
+        background-color: #898980;
         padding: 10px;
         text-align: center;
     }
