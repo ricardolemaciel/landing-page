@@ -33,6 +33,7 @@ body { margin: 0; }
         min-height: 100%;
         z-index: -1;
     }
+
     .video-overlay {
         position: absolute;
         top: 0;
@@ -44,14 +45,15 @@ body { margin: 0; }
     }
 
 /* btn */
-    .btn_descobrir {
+    .btn_discover {
         background-color: #3DB2FF;
         color: #000;
+        padding: 8px;
         border-radius: 20px;
         text-decoration: none;
         text-align: center;
         display: inline-block;
-        width: 160px;
+        width: 180px;
         margin: 15% 0 0 0;
         border:1px solid #3DB2FF;
 
@@ -63,20 +65,20 @@ body { margin: 0; }
         font-size: 22px;
     }
 
-    .btn_descobrir:hover {
+    .btn_discover:hover {
         background-color:#FF2442;
         border:1px solid #FF2442;
     }
 
-    .btn_secao01 {
+    .btn_select {
         background-color: #3DB2FF;
         color: #000;
+        padding: 5px;
         border-radius: 20px;
         text-decoration: none;
         text-align: center;
         display: inline-block;
         width: 160px;
-        /* margin: 0 0 5% 0; */
         margin-left: 5%;
         border:1px solid #3DB2FF;
 
@@ -88,14 +90,15 @@ body { margin: 0; }
         font-size: 22px;
     }
 
-    .btn_secao01:hover {
+    .btn_select:hover {
         background-color:#FF2442;
         border:1px solid #FF2442;
     }
 
-    .btn_form {
+    .btn_subscribe {
         background-color: #3DB2FF;
         color: #000;
+        padding: 8px;
         border-radius: 20px;
         text-decoration: none;
         text-align: center;
@@ -112,17 +115,36 @@ body { margin: 0; }
         font-size: 22px;
     }
 
-    .btn_form:hover {
+    .btn_subscribe:hover {
         background-color:#FF2442;
         border:1px solid #FF2442;
     }
 
+    #btn_top {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #FF2442;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+      
+      #btn_top:hover {
+        background-color: #3DB2FF;
+      }
+      
 /* Titles and texts */
     .title {
         font-family: 'Urbanist', sans-serif;
         font-weight: 600;
         font-size: 36px;
-        text-decoration: underline;
         margin: 3% 0 0 0;
     }
 
@@ -131,115 +153,124 @@ body { margin: 0; }
         font-weight: 300;
         font-size: 24px;
         text-align: justify;
-
-        width: 50%;
         margin: 0 0 0 5%;
     }
 
-    .name {
-        font-family: 'Urbanist', sans-serif;
-        font-weight: 600;
+    .in_column {
+        width: 90%;
+    }
+
+    .three_column {
         font-size: 26px;
     }
 
-    .discricao {
-        font-family: 'Urbanist', sans-serif;
-        font-weight: 300;
+    .examples {
         font-size: 18px;
         text-align: left;
-
-        width: 90%;
         margin: 0 0 0 5%;   
     }
 
-    .developer {
-        font-family: 'Urbanist', sans-serif;
-        font-weight: 300;
-        font-size: 18px;
-        text-align: center;
-        text-decoration: none;
-    }
     .newsletter {
         text-decoration: none;
         text-align: center;
     }
+
 /* Container */
     .row {
         display: -webkit-flex;
         display: flex;
     }
 
-/* Column */
     .column {
         -webkit-flex: 1;
         -ms-flex: 1;
         flex: 1;
         padding: 10px;
         height: 100vh;
-        
-        text-align: left;
     }
 
-    #item-01 {
-        -webkit-flex: 1;
-        -ms-flex: 1;
-        flex: 1;
+    .btn {
+        margin-top: 15%;
+    }
+
+    .description {
+        width: 50%;
+    }
+
+    .misty_rose {
+        background-color: #F1DEDE;
+        text-align: left;
         padding: 10px;
         height: 100vh;
-        
-        background-color: #F1DEDE;
-        text-align: left;
     }
 
-    .item-02 {
+    .honey_yellow {
         background-color: #FFB830;
-    }
-
-    .item-03 {
-        background-color: #F1DEDE;
-        text-align: center;
-        width: 90%;
-        text-decoration: none;
-
-    }
-
-    .item-04 {
-        background-color: #F1DEDE;
-        text-decoration: none;
-        text-align: center;
     }
 
 /* Form  */
     form input {
         width: 80%;
-        font-size: 24px;
-        /* border: 2px solid #FF2442 ; */
+        font-size: 26px;
+        padding: 10px 20px;
         border: none;
+        border-radius: 15px;
         margin: 5% 0 0 10%;
-        background-color: #F1DEDE;
     }
-
 
 /* img */
-    .img-01 {
-        width: 250px;
-        margin: -15% 0 0 70%;
-        /* margin-left: 70%;
-        margin-top: -10%; */
-
+    .img_rocket {
+        width: 280px; 
+        height: 280px;
+        margin: 10% 0 0 15%;
     }
 
-    .gifs {
-        width: 250px;
-        margin: 15% 0 0 20%;
+    .img_web {
+        width: 450px;
+        margin: 25% 0 0 10%;
     }
+
     .prints {
         width: 250px;
         margin: 30% 0 0 20%;
     }
+
 /* footer */
-    .footer {
+    .footer-basic {
+        padding:5px 0;
         background-color: #898980;
-        padding: 10px;
-        text-align: center;
+        color:#000;
+    }
+
+    .footer-basic .social {
+        text-align:center;
+        padding-top:25px;
+    }
+
+    .footer-basic .social > a {
+        font-size:24px;
+        width:40px;
+        height:40px;
+        line-height:40px;
+        display:inline-block;
+        text-align:center;
+        border-radius:50%;
+        border:1px solid #ccc;
+        margin:0 8px;
+        color:inherit;
+        opacity:0.75;
+    }
+
+    .footer-basic .social > a:hover {
+        opacity:0.9;
+        color: #FF2442;
+    }
+
+    .footer-basic .copyright {
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 300;
+        margin-top:15px;
+        text-align:center;
+        font-size:16px;
+        color:black;
     }

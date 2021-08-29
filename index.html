@@ -3,9 +3,10 @@
     <head>
         <title>Landing Page</title>
         <link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     </head>
     <body>
+      <button onclick="topFunction()" id="btn_top" title="Go to top"><i class="bi bi-arrow-up"></i></button>
         <div class="header">
             <div class="video-overlay"></div>
             <video autoplay muted loop id="myVideo">
@@ -13,12 +14,11 @@
                 Your browser does not support HTML5 video.
             </video>
             <h2>O QUE É<br>UMA<br>LANDING PAGE?</h2>
-            <a href="#item-01" class="btn_descobrir">DESCOBRIR 
-                <!-- <i class="material-icons" style="font-size: 32;">expand_more</i> --></a>      
-          </div>
+            <a href="#item-01" class="btn_discover">DESCOBRIR <i class="bi bi-chevron-double-down"></i></a>      
+        </div>
           
-          <div class="row" id="item-01">
-            <div>
+          <div class="row misty_rose" id="item-01">
+            <div class="description">
                 <div class="title">Lorem Ipsum</div><br>
                 <div class="text">Sollicitudin nostra conubia ornare donec venenatis facilisis proin, 
                   enim donec suscipit dapibus turpis mi lobortis, duis maecenas mi mauris feugiat inceptos. 
@@ -26,43 +26,48 @@
                   aliquet ac viverra phasellus lectus curabitur tempus integer ullamcorper cursus, purus at fringilla duis laoreet 
                   quam ut habitasse class. euismod litora metus quisque.
                 </div>
-                  <img src="assets/img/PinClipart.com_skills-clipart_748672.png" class="img-01" alt="">
-
-                  <a href="#item-02" class="btn_secao01">Exemplos</a>
-                    
-                  <a href="#item-03" class="btn_secao01">Resultados</a>
+                <div class="btn">
+                  <a href="#item-02" class="btn_select">Exemplos</a>
+                      
+                  <a href="#item-03" class="btn_select">Resultados</a>
                   
-                  <a href="#item-04" class="btn_secao01">Newsletter</a> 
+                  <a href="#item-04" class="btn_select">Newsletter</a>
+                </div>
               </div>
-            </div>
+              <img src="assets/img/rocket.png" class="img_rocket" alt="">
+          </div>
 
           <div class="row" id="item-02">
-            <div class="column item-02">
-              <div class="name">Lorem Ipsum</div><br>
-              <div class="discricao">Sollicitudin nostra conubia ornare donec venenatis facilisis proin,</div>
+
+            <div class="column honey_yellow">
+              <div class="title three_column">Lorem Ipsum</div><br>
+              <div class="text examples">Sollicitudin nostra conubia ornare donec venenatis facilisis proin,</div>
               <a href="https://www.facebook.com/" target="_blanc"><img src="assets/img/exemplo.png" alt="" class="prints"></a>
             </div>
 
             <div class="column">
-              <div class="name">Lorem Ipsum</div><br>
-              <div class="discricao">Sollicitudin nostra conubia ornare donec venenatis facilisis proin,</div>
+              <div class="title three_column">Lorem Ipsum</div><br>
+              <div class="text examples">Sollicitudin nostra conubia ornare donec venenatis facilisis proin,</div>
               <a href="https://www.facebook.com/" target="_blanc"><img src="assets/img/exemplo.png" alt="" class="prints"></a>
             </div>
-            <div class="column item-02">
-              <div class="name">Lorem Ipsum</div><br>
-              <div class="discricao">Sollicitudin nostra conubia ornare donec venenatis facilisis proin,</div>
+
+            <div class="column honey_yellow">
+              <div class="title three_column">Lorem Ipsum</div><br>
+              <div class="text examples">Sollicitudin nostra conubia ornare donec venenatis facilisis proin,</div>
               <a href="https://www.facebook.com/" target="_blanc"><img src="assets/img/exemplo.png" alt="" class="prints"></a>
             </div>
+
           </div>
 
           <div class="row" id="item-03">
-            <div class="column">
-              <img src="assets/img/website.gif" class="gifs" alt=""><br>
-              <img src="assets/img/grafico2.gif" class="gifs" alt="">
+            <div class="column misty_rose">
+              <img src="assets/img/web_02.png" class="img_web" alt="">
+              <!-- <img src="assets/img/web_02.png" class="img_web" alt=""> -->
             </div>
-            <div class="column item-03">
+
+            <div class="column">
               <div class="title">Lorem Ipsum</div><br>
-              <div class="text item-03">Sollicitudin nostra conubia ornare donec venenatis facilisis proin, 
+              <div class="text in_column">Sollicitudin nostra conubia ornare donec venenatis facilisis proin, 
                 enim donec suscipit dapibus turpis mi lobortis, duis maecenas mi mauris feugiat inceptos. 
                 vehicula suspendisse potenti dapibus suscipit nullam lacinia non cras quisque convallis, 
                 aliquet ac viverra phasellus lectus curabitur tempus integer ullamcorper cursus, purus at fringilla duis laoreet 
@@ -72,9 +77,9 @@
           </div>
 
           <div class="row" id="item-04">
-            <div class="column item-04">
-              <div class="title item-04">Lorem Ipsum</div><br>
-            <div class="text item-03">Sollicitudin nostra conubia ornare donec venenatis facilisis proin, 
+            <div class="column">
+              <div class="title">Lorem Ipsum</div><br>
+            <div class="text in_column">Sollicitudin nostra conubia ornare donec venenatis facilisis proin, 
               enim donec suscipit dapibus turpis mi lobortis, duis maecenas mi mauris feugiat inceptos. 
               vehicula suspendisse potenti dapibus suscipit nullam lacinia non cras quisque convallis, 
               aliquet ac viverra phasellus lectus curabitur tempus integer ullamcorper cursus, purus at fringilla duis laoreet 
@@ -82,19 +87,27 @@
             </div>
           </div>
 
-            <div class="column">
+            <div class="column misty_rose">
               <div class="title newsletter">Lorem Ipsum</div><br>
               <form>
                 <input type="text" name="" id="" placeholder="Nome"><br>
                 <input type="text" name="" id="" placeholder="Sobrenome"><br>
                 <input type="email" name="" id="" placeholder="Email"><br>
-                <a href="pages/obrigado.html" class="btn_form">Inscreva-se</a>  
+                <a href="pages/obrigado.html" class="btn_subscribe">Inscreva-se</a>  
               </form>
             </div>
           </div>
           
-          <div class="footer">
-            <span class="developer">Desenvolvido por <a href="https://github.com/ricardolemaciel" target="_blanc">Ricardo Leal Maciel</a></span>
-          </div>
+          <div class="footer-basic">
+            <footer>
+                <div class="social">
+                  <a target="_blanc" href="https://github.com/ricardolemaciel"><i class="bi bi-github"></i></a>
+                  <a target="_blanc" href="https://linkedin.com/in/ricardo-henrique-leal-maciel"><i class="bi bi-linkedin"></i></a>
+                  <a target="_blanc" href="https://www.instagram.com/ricardolemaciel/"><i class="bi bi-instagram"></i></a>
+                </div>
+                <p class="copyright">Ricardo Leal Maciel © 2021</p>
+            </footer>
+        </div>
+        <script src="assets/js/topButton.js"></script>
     </body>
 </html>
